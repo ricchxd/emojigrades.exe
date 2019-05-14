@@ -1,6 +1,6 @@
 function aye()
 {
-    var atzime = window.promt("Enter your grade rating (0-10)");
+    var atzime = window.prompt("Enter your grade rating (0-10)");
     var Emoji;
 
     switch(atzime)
@@ -33,15 +33,17 @@ function aye()
             Emoji = "😊";
             break;
         case "9":
-            Emoji = "😇";
+            Emoji = "🤠";
             break;
         case "10":
             Emoji = "🔥🔥🔥";
             break;
         default:
-            Emoji = "Wrong input there, hun.";
+            Emoji = "💩";
             break;
     }
 
     return Emoji;
 }
+
+document.getElementById("emojizz").innerHTML = aye();
